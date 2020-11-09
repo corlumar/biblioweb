@@ -1,0 +1,54 @@
+*
+body{
+      font-family: Arial;
+    background-color: white;
+
+}
+
+
+.container {
+  padding-top: 50px;
+   display: grid;
+   grid-columns: auto auto auto;
+   justify-content: right;
+ 
+}
+
+
+.header {
+padding-top: 20px;
+text-align: center;
+
+
+}
+.header:nth-of-type(1){
+      background-image: url(../images/UPCH_4.jpg);
+    background-position: 50% 50%;" data-img-width="1800" data-img-height="1200";
+    align-content: center;
+    grid-area: header;
+    grid-row: 1 / span 3;
+    grid-gap: 15px;
+}
+.header-1{
+  background-color: #fafafa;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  /* IMPORTANTE */
+  text-align: center;
+}
+}
+
+.flex-fieldset {
+  display flex;
+  justify-content: center;
+  
+}
+
+.topnav1{
+  text-align-last: all;
+}
+.footer {
+
+
+}

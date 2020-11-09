@@ -1,0 +1,43 @@
+*
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    backgroud: #0000FF;
+}
+
+/*header */
+
+.title h1 {
+    padding: 20px, 0;
+    text-align: center;
+    font-size: 2.9em
+
+}
+
+.container {
+    background: #4682B4; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.6em auto; 
+    display: grid;
+    grid-template-columns: repet(8, 1fr);
+
+
+}
+.container .header,
+.container .footer{
+    grid-column: 1/8
+    background: #4682B4;
+    color: #ffff;
+}
+.container .content {
+    grid-column: span 3;
+
+}
+.container-fluid .loginbox {
+    grid-column: 3, center;
+
+}

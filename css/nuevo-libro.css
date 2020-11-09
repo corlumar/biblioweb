@@ -1,0 +1,90 @@
+.enlaceboton {    font-family: verdana, arial, sans-serif;
+			font-size: 10pt;
+			
+			font-weight: bold;
+			padding: 15px;
+			background-color: #ffffcc;
+			color: #666666;
+			text-decoration: none;
+			}
+			.enlaceboton:link,
+			.enlaceboton:visited {
+			border-top: 1px solid #cccccc;
+			border-bottom: 2px solid #666666;
+			border-left: 1px solid #cccccc;
+			border-right: 2px solid #666666;
+			}
+			.enlaceboton:hover {
+			border-bottom: 1px solid #cccccc;
+			border-top: 2px solid #666666;
+			border-right: 1px solid #cccccc;
+			border-left: 2px solid #666666;
+			}
+
+			    
+			.modalDialog {
+			position: fixed;
+			font-family: Arial, Helvetica, sans-serif;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0,0,0,0.8);
+			z-index: 99999;
+			opacity:0;
+			-webkit-transition: opacity 400ms ease-in;
+			-moz-transition: opacity 400ms ease-in;
+			transition: opacity 400ms ease-in;
+			pointer-events: none;
+		}
+		.modalDialog:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		.modalDialog > div {
+			width: 330px;
+			position: relative;
+			margin: 3% auto;
+			/* padding: 5px 20px 13px 20px; */
+			border-radius: 10px;
+			background: #fff;
+			background: -moz-linear-gradient(#fff, #999);
+			background: -webkit-linear-gradient(#fff, #999);
+			background: -o-linear-gradient(#fff, #999);
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		}
+		.close {
+			background: #606061;
+			color: #FFFFFF;
+			line-height: 25px;
+			position: absolute;
+			right: -12px;
+			text-align: center;
+			top: -10px;
+			width: 24px;
+			text-decoration: none;
+			font-weight: bold;
+			-webkit-border-radius: 12px;
+			-moz-border-radius: 12px;
+			border-radius: 12px;
+			-moz-box-shadow: 1px 1px 3px #000;
+			-webkit-box-shadow: 1px 1px 3px #000;
+			box-shadow: 1px 1px 3px #000;
+		}
+		.close:hover {
+			 background: #00d9ff;
+		 }
+		.button {
+ 		 background-color: #4CAF50;
+  		border: none;
+  		color: white;
+  		padding: 15px 32px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 16px;
+  		margin: 4px 2px;
+  		cursor: pointer;
+		}

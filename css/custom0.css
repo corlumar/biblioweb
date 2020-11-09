@@ -1,0 +1,77 @@
+*
+body{
+      font-family: Arial;
+    background-color: Lightblue;
+
+}
+
+
+.container {
+  padding-top: 30px;
+   display: grid;
+   /*grid-template-columns: 30% 30%;
+   grid-template-rows: repeat(6, 15%);*/
+   grid-template-areas: 25% 40% 40%/30% 30% 30%;
+   
+   
+   grid-template-areas: "header header"
+                        "registro-frm registro-frm"
+                        "footer footer";
+
+   justify-content: center;
+ 
+}
+
+
+.header {
+padding-top: 10px;
+text-align: center;
+
+
+}
+.header:nth-of-type(1){
+      background-image: url(../images/UPCH_4.jpg);
+    background-position: 50% 50%;" data-img-width="1800" data-img-height="1200";
+    align-content: center;
+    grid-area: header;
+    grid-row: 1 / span 3;
+    grid-gap: 15px;
+}
+
+
+.registro-frm {
+  background-image: url(../images/UPCH_4.jpg);
+    background-position: 50% 50%;" data-img-width="1800" data-img-height="1200";
+   text-align: center;
+   font-size: 25px;
+}
+
+.registro-frm:nth-of-type(2){
+  background: red;
+grid-area: registro-frm;
+grid-row: 5 / span 2;
+
+}
+
+.registro-frm .fieldset {
+background-position: 50% 50%;
+data-img-width="1800";
+data-img-height="1200";
+grid-area: registro-frm;
+grid-row: 5 / span 2;
+}
+.footer {
+     background: whitesmoke;
+
+
+   
+}
+
+.footer:nth-of-type(5){
+    display: grid;
+    grid-area: footer;
+    grid-row: 9 / span 1;
+    grid-column: 1 / span 3;
+   
+   
+}

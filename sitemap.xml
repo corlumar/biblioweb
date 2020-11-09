@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ 
+<url>
+ 
+    <loc>https://www.bibliotecaupch.site</loc>
+ 
+     <lastmod>2020-05-02</lastmod>
+ 
+    <changefreq>monthly</changefreq>
+ 
+    <priority>1.0</priority>
+ 
+</url>  
+ 
+<url>
+ 
+    <loc>https://www.bibliotecaupch.site/loginn.php</loc>
+  
+    <lastmod>2020-05-02</lastmod>
+ 
+    <changefreq>monthly</changefreq>
+ 
+    <priority>0.8</priority>
+ 
+</url>  
+ 
+<url>
+ 
+    <loc>https://www.bibliotecaupch.site/rol_admin.php</loc>
+  
+    <lastmod>2020-05-02</lastmod>
+ 
+    <changefreq>monthly</changefreq>
+ 
+    <priority>0.8</priority>
+ 
+</url>  
+ 
+<url>
+ 
+    <loc>https://www.bibliotecaupch.site/rol_alumno.php</loc>
+  
+    <lastmod>2020-05-02</lastmod>
+ 
+    <changefreq>monthly</changefreq>
+ 
+    <priority>0.8</priority>
+ 
+</url>  
+ 
+<url>
+ 
+    <loc>https://www.bibliotecaupch.site/acerca.php</loc>
+   
+    <lastmod>2020-05-02</lastmod>
+ 
+    <changefreq>monthly</changefreq>
+ 
+    <priority>0.5</priority>
+ 
+</url>  
+ 
+<url>
+ 
+    <loc>https://www.bibliotecaupch.site/mision.html</loc>
+  
+    <lastmod>2020-05-02</lastmod>
+ 
+    <changefreq>monthly</changefreq>
+ 
+    <priority>0.5</priority>
+ 
+</url>  
+ 
+<url>
+ 
+    <loc>https://www.bibliotecaupch.site/contacto.php</loc>
+  
+    <lastmod>2020-05-02</lastmod>
+ 
+    <changefreq>monthly</changefreq>
+ 
+    <priority>0.5</priority>
+ 
+</url>  
+ 
+<url>
+ 
+    <loc>https://www.bibliotecaupch.site/busqueda_autor.php</loc>
+  
+    <lastmod>2020-05-02</lastmod>
+ 
+    <changefreq>monthly</changefreq>
+ 
+    <priority>0.5</priority>
+ 
+</url>  
+ 
+<url>
+ 
+    <loc>http://bibliotecaupch.site/busqueda_alumno.php</loc>
+  
+    <lastmod>2020-05-02</lastmod>
+ 
+    <changefreq>monthly</changefreq>
+ 
+    <priority>0.5</priority>
+ 
+</url>  
+ 
+</urlset>
