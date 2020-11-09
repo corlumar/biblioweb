@@ -9,7 +9,9 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.estilo-prueba {
+ color: fff;
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
