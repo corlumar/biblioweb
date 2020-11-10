@@ -7,7 +7,7 @@ header('Content-Type: text/html');
 session_start();
 if(!isset($_SESSION['nombre']))
 {
-    header('Location: loginn.php');
+    header('Location: index.php');
 }
 ?>
 <!DOCTYPE html>
@@ -139,7 +139,7 @@ if(!isset($_SESSION['nombre']))
           <div class=""
     <div align="center">
           
-			<form name="clave" method="POST" action="titulos.php">
+			<form name="clave" method="POST" action="busqueda_titulo.php">
 
 				Titulo del Libro:<input type="text" name="titulo"  placeholder="Titulo del Libro" required/>
 

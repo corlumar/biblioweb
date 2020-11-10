@@ -43,32 +43,26 @@
 
 	mysqli_set_charset($conn, "utf8");
 $tabla="";
-$query="SELECT libro.*, autor.nombre_autor, autor.apellido_autor, disponibilidad.disponibilidad
-	FROM libro, autor, disponibilidad
-	WHERE libro.id_autor = autor.id_autor AND 
-	libro.disponibilidad = disponibilidad.id_disponibilidad AND 
-	  libro.id_libro
-      LIKE '%$query%'";
+$query="SELECT libro.*, autor.nombre_autor, autor.apellido_autor
+FROM libro, autor WHERE libro.id_autor = autor.id_autor AND 
+autor.nombre_autor
+      LIKE '%%'";
 
 ///////// LO QUE OCURRE AL TECLEAR SOBRE EL INPUT DE BUSQUEDA ////////////
-if(isset($_POST['isbn']))
+if(isset($_POST['autor']))
 {
-	$q=$conn->real_escape_string($_POST['isbn']);
-	$query = "SELECT libro.*, autor.nombre_autor, autor.apellido_autor, disponibilidad.disponibilidad
-	FROM libro, autor, disponibilidad
-	WHERE libro.id_autor = autor.id_autor AND 
-	libro.disponibilidad = disponibilidad.id_disponibilidad AND 
-	  libro.id_libro
-	  LIKE '%$%'";
-}
-// echo $query;
+	$q=$conn->real_escape_string($_POST['autor']);
+	$query = "SELECT libro.*, autor.nombre_autor, autor.apellido_autor
+FROM libro, autor WHERE libro.id_autor = autor.id_autor AND 
+autor.nombre_autor
+ LIKE '%$q%'";
+}// echo $query;
 $buscarTitulo=$conn->query($query);
 if ($buscarTitulo->num_rows > 0)
 {
 	$tabla.= 
 	'<table align="center">
 		<tr>
-		    <th>ESTATUS</th>
 			<th>ISBN</th>	
 			<th>TITULO</th>	
 			<th>AUTOR</th>
@@ -82,7 +76,6 @@ if ($buscarTitulo->num_rows > 0)
 	{
 		$tabla.=
 		'<tr> 
-		    <td>'.$filaTitulo['estatus'].'</td>
 			<td>'.$filaTitulo['id_libro'].'</td>
 			<td>'.$filaTitulo['titulo'].'</td>
 			<td>'.$filaTitulo['nombre_autor'].'</td>
@@ -107,4 +100,3 @@ echo $tabla;
 ?>
 <br>
  <?php include "footer.php";?>
-/html>

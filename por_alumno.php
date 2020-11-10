@@ -7,7 +7,7 @@ header('Content-Type: text/html');
 session_start();
 if(!isset($_SESSION['nombre']))
 {
-    header('Location: loginn.php');
+    header('Location: index.php');
 }
 ?>
 <!DOCTYPE html>
@@ -134,14 +134,14 @@ if(!isset($_SESSION['nombre']))
     <br>
  
 <div class="dropdown">
-  <button class="w3-button w3-red">Consulta por Alumno</button>
+  <button class="w3-button w3-red">Consulta por Universitario</button>
   <div class="dropdown-content">
           <div class=""
     <div align="center">
           
 			<form name="clave" method="POST" action="busqueda_alumno.php">
 
-				Clave del Alumno:<input type="text" name="clave" onfocus="this.value=''" value="Escribe" placeholder="Escriba la clave" required/>
+				Clave del Universitario:<input type="text" name="clave" onfocus="this.value=''" value="Escribe" placeholder="Escriba la clave" required/>
 
 				<input type="submit" value="Buscar" name="btn1">
 

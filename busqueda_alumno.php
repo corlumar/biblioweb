@@ -16,7 +16,7 @@ require_once 'conecta.php';
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/loginn.css"> 
 	<link rel="stylesheet" href="css/mis_estilos.css">
-	<link rel="stylesheet" href="css/css-tablas.css"> 
+	<link rel="stylesheet" href="css/css-tablas1.css"> //se priorizo tablas1.css
 
 
 </head>
@@ -60,11 +60,11 @@ mysqli_set_charset($conn, "utf8");
 $tabla="";
 
 
-$query="SELECT  u.estatus, u.clave, q.id_users, q.nombre, u. apellido_pat, a.id_carrera, a.turno, q.email
-      FROM users q, alumno a
+$query="SELECT  u.estatus, u.clave, q.id_users, q.nombre, u.apellido_pat, u.apellido_mat, q.email, q.password
+      FROM users q
       INNER join universitario u 
       ON  u.id_users = q.id_users
-      WHERE a.clave
+      WHERE clave
       LIKE '%%'";
 
 ///////// LO QUE OCURRE AL TECLEAR SOBRE EL INPUT DE BUSQUEDA ////////////

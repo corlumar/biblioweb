@@ -7,7 +7,7 @@ header('Content-Type: text/html');
 session_start();
 if(!isset($_SESSION['nombre']))
 {
-    header('Location: loginn.php');
+    header('Location: index.php');
 }
 ?>
 <!DOCTYPE html>
