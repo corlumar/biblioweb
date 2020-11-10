@@ -139,7 +139,7 @@ if(!isset($_SESSION['nombre']))
           <div class=""
     <div align="center">
           
-			<form name="clave" method="POST" action="alumnos.php">
+			<form name="clave" method="POST" action="busqueda_alumno.php">
 
 				Clave del Alumno:<input type="text" name="clave" onfocus="this.value=''" value="Escribe" placeholder="Escriba la clave" required/>
 
